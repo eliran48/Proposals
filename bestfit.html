@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>הצעת מחיר - הקמת צ'טבוט וואטסאפ BESTFIT</title>
+    <!-- טעינת Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 700;
+        }
+        .whatsapp-bg {
+            background-color: #E5DDD5;
+            background-image: url('https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png');
+            background-repeat: repeat;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+        .gradient-brand {
+            background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+        }
+        .flow-step {
+            position: relative;
+        }
+        .flow-step:not(:last-child):after {
+            content: '←';
+            position: absolute;
+            left: -20px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #3b82f6;
+            font-weight: bold;
+        }
+        @media (max-width: 640px) {
+            .flow-step:not(:last-child):after {
+                content: '↓';
+                left: 50%;
+                top: auto;
+                bottom: -20px;
+                transform: translateX(-50%);
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 leading-relaxed">
+
+    <div class="container mx-auto max-w-5xl p-6 sm:p-10 bg-white shadow-lg rounded-lg my-10 border-t-8 border-blue-900">
+
+        <!-- כותרת ומבוא -->
+        <header class="border-b pb-6 mb-8 text-center sm:text-right">
+            <div class="flex flex-col sm:flex-row justify-between items-center sm:items-start">
+                <div class="mb-6 sm:mb-0">
+                    <div class="mb-4 sm:mb-2 flex justify-center sm:justify-start">
+                         <!-- לוגו BESTFIT -->
+                        <img src="https://bestfit.co.il/wp-content/uploads/2024/06/bestfit-logo.png" alt="לוגו BESTFIT" class="h-12 w-auto">
+                    </div>
+                    <h1 class="text-3xl sm:text-4xl font-bold text-blue-900 mb-2">הקמת צ'טבוט וואטסאפ ל-BESTFIT</h1>
+                    <p class="text-xl text-blue-700 font-bold mb-4 italic">הופכים כל ליד למתאמן/ת מרוצה</p>
+                    <div class="space-y-2 text-gray-600 text-sm">
+                        <p><span class="font-semibold text-gray-900">אל:</span> יאן אולגנבלום, מייסד BESTFIT</p>
+                        <p><span class="font-semibold text-gray-900">מאת:</span> אלירן אור, יועץ ומתכנן תהליכי שיווק ואוטומציה</p>
+                        <p><span class="font-semibold text-gray-900">תאריך:</span> 30 בדצמבר, 2025</p>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center">
+                    <!-- לוגו אלירן אור -->
+                    <img src="https://i0.wp.com/eliranor.com/wp-content/uploads/2020/02/eliran-OR-%D7%9C%D7%95%D7%92%D7%95-%D7%A9%D7%A0%D7%99-%D7%A9%D7%A7%D7%95%D7%A3.png?fit=500%2C500&ssl=1" alt="לוגו אלירן אור" class="w-24 h-24 mb-2">
+                </div>
+            </div>
+        </header>
+
+        <main class="space-y-12">
+
+            <!-- סעיף 1: איפיון תהליכי הליד והלקוח -->
+            <section>
+                <h2 class="text-2xl font-semibold text-blue-800 mb-6 border-r-4 border-blue-800 pr-3">1. איפיון תהליכי הליד והלקוח</h2>
+                <p class="mb-8 text-gray-700 leading-relaxed text-right">
+                    כדי שהבוט יהיה אפקטיבי, עלינו לבנות תהליכי "זרימה" (Flows) מדויקים עבור שני קהלי היעד העיקריים של BESTFIT. הנה האופן שבו נבנה את המסלולים:
+                </p>
+
+                <div class="space-y-10">
+                    <!-- מסלול ליד (מכירות) -->
+                    <div class="bg-blue-50 p-6 rounded-2xl border border-blue-100 shadow-sm">
+                        <h3 class="text-lg font-bold text-blue-900 mb-6 flex items-center">
+                            <span class="bg-blue-600 text-white w-8 h-8 rounded-full flex items-center justify-center ml-3 text-sm font-bold">A</span>
+                            מסלול ליד חדש (מכירות)
+                        </h3>
+                        <div class="flex flex-col sm:flex-row gap-4 justify-between items-center text-center">
+                            <div class="flow-step bg-white p-4 rounded-xl shadow-sm border border-gray-100 w-full">
+                                <p class="text-[10px] font-bold text-blue-600 mb-1">טריגר</p>
+                                <p class="text-xs font-semibold">קליק ממודעת פייסבוק</p>
+                            </div>
+                            <div class="flow-step bg-white p-4 rounded-xl shadow-sm border border-gray-100 w-full">
+                                <p class="text-[10px] font-bold text-blue-600 mb-1">זיהוי מקור</p>
+                                <p class="text-xs font-semibold">זיהוי הקמפיין (למשל: צונאמי)</p>
+                            </div>
+                            <div class="flow-step bg-white p-4 rounded-xl shadow-sm border border-gray-100 w-full">
+                                <p class="text-[10px] font-bold text-blue-600 mb-1">סינון ראשוני</p>
+                                <p class="text-xs font-semibold">שאלות התאמה ומטרות</p>
+                            </div>
+                            <div class="flow-step bg-blue-600 text-white p-4 rounded-xl shadow-md w-full">
+                                <p class="text-[10px] font-bold opacity-80 mb-1 uppercase text-right">CTA</p>
+                                <p class="text-xs font-bold">תיאום ייעוץ אישי עם יאן</p>
+                            </div>
+                        </div>
+                        <p class="mt-6 text-sm text-gray-600 italic">
+                            * במידה והליד לא מסיים את התהליך, המערכת תבצע "פולו-אפ" אוטומטי כעבור מספר שעות.
+                        </p>
+                    </div>
+
+                    <!-- מסלול לקוח קיים (שירות) -->
+                    <div class="bg-emerald-50 p-6 rounded-2xl border border-emerald-100 shadow-sm">
+                        <h3 class="text-lg font-bold text-emerald-900 mb-6 flex items-center">
+                            <span class="bg-emerald-600 text-white w-8 h-8 rounded-full flex items-center justify-center ml-3 text-sm font-bold">B</span>
+                            מסלול לקוח קיים (שירות ושימור)
+                        </h3>
+                        <div class="flex flex-col sm:flex-row gap-4 justify-between items-center text-center">
+                            <div class="flow-step bg-white p-4 rounded-xl shadow-sm border border-gray-100 w-full">
+                                <p class="text-[10px] font-bold text-emerald-600 mb-1">טריגר</p>
+                                <p class="text-xs font-semibold">הודעה חופשית בוואטסאפ</p>
+                            </div>
+                            <div class="flow-step bg-white p-4 rounded-xl shadow-sm border border-gray-100 w-full">
+                                <p class="text-[10px] font-bold text-emerald-600 mb-1 text-right">זיהוי ושם</p>
+                                <p class="text-xs font-semibold">"היי דנה, כיף לשמוע ממך!"</p>
+                            </div>
+                            <div class="flow-step bg-white p-4 rounded-xl shadow-sm border border-gray-100 w-full">
+                                <p class="text-[10px] font-bold text-emerald-600 mb-1">תפריט שירות</p>
+                                <p class="text-xs font-semibold">לו"ז, הקפאות, תקלות אפליקציה</p>
+                            </div>
+                            <div class="flow-step bg-emerald-600 text-white p-4 rounded-xl shadow-md w-full">
+                                <p class="text-[10px] font-bold opacity-80 mb-1">פתרון מהיר</p>
+                                <p class="text-xs font-bold">מענה אוטומטי ל-70% מהשאלות</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- סעיף 2: הדמיות חיות -->
+            <section>
+                <h2 class="text-2xl font-semibold text-blue-800 mb-6 border-r-4 border-blue-800 pr-3">2. הדמיית הצ'ט בפועל</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
+                    
+                    <!-- הדמיה 1: ליד מפייסבוק (מכירות) -->
+                    <div class="flex flex-col">
+                        <div class="flex items-center justify-center mb-3 text-blue-700 font-bold">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" /></svg>
+                            מענה ללידים (מכירות)
+                        </div>
+                        <div class="bg-gray-100 rounded-3xl shadow-xl overflow-hidden border-4 border-gray-800 flex-grow">
+                            <div class="bg-[#075e54] p-3 flex items-center text-white">
+                                <div class="w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center font-bold text-sm">B</div>
+                                <div class="mr-3 text-right">
+                                    <p class="text-sm font-semibold leading-none">BestFit Sales Bot</p>
+                                    <p class="text-[10px] opacity-80 italic">מענה מיידי 24/7</p>
+                                </div>
+                            </div>
+                            <div class="p-3 h-80 space-y-3 overflow-y-auto whatsapp-bg text-[12px]">
+                                <div class="flex justify-end">
+                                    <div class="bg-[#dcf8c6] p-2 rounded-lg shadow-sm max-w-[85%]">היי, ראיתי את המודעה של "צונאמי" לחיטוב מהיר. אפשר פרטים?</div>
+                                </div>
+                                <div class="flex justify-start">
+                                    <div class="bg-white p-2 rounded-lg shadow-sm max-w-[85%] text-right">
+                                        <p class="font-bold">היי! מוכנה לשינוי? 🌊</p>
+                                        <p class="mt-1">מסלול צונאמי הוא הפתרון המדויק לחיטוב ב-40 דקות אימון. מה הכי נוח לך?</p>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col space-y-2 pr-2 text-right">
+                                    <button class="w-full text-blue-600 font-bold py-2 bg-white/90 rounded-lg text-[10px] border border-blue-100 shadow-sm">לתיאום פגישת ייעוץ עם יאן</button>
+                                    <button class="w-full text-blue-600 font-bold py-2 bg-white/90 rounded-lg text-[10px] border border-blue-100 shadow-sm">צפייה במחירון ותוכניות מנוי</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- הדמיה 2: שירות ללקוחות קיימים -->
+                    <div class="flex flex-col">
+                        <div class="flex items-center justify-center mb-3 text-green-700 font-bold">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" /></svg>
+                            שירות לקוחות (שימור)
+                        </div>
+                        <div class="bg-gray-100 rounded-3xl shadow-xl overflow-hidden border-4 border-gray-800 flex-grow">
+                            <div class="bg-[#075e54] p-3 flex items-center text-white">
+                                <div class="w-8 h-8 rounded-full bg-emerald-500 flex items-center justify-center font-bold text-sm">S</div>
+                                <div class="mr-3 text-right text-right">
+                                    <p class="text-sm font-semibold leading-none text-right">BestFit Support</p>
+                                    <p class="text-[10px] opacity-80 italic text-right">זמינים למתאמנים שלנו</p>
+                                </div>
+                            </div>
+                            <div class="p-3 h-80 space-y-3 overflow-y-auto whatsapp-bg text-[12px]">
+                                <div class="flex justify-end">
+                                    <div class="bg-[#dcf8c6] p-2 rounded-lg shadow-sm max-w-[85%] text-right">היי יאן, רציתי לדעת מתי יש שיעור פילאטיס השבוע</div>
+                                </div>
+                                <div class="flex justify-start">
+                                    <div class="bg-white p-2 rounded-lg shadow-sm max-w-[85%] text-right">
+                                        <p class="font-bold text-right">היי דנה, איזה כיף לשמוע ממך 😊</p>
+                                        <p class="mt-1 text-right">הנה מערכת השעות המעודכנת בסטודיו בקריית ים:</p>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col space-y-2 pr-2 text-right">
+                                    <button class="w-full text-blue-600 font-bold py-2 bg-white/90 rounded-lg text-[10px] border border-blue-100 shadow-sm">צפייה במערכת שעות מלאה</button>
+                                    <button class="w-full text-blue-600 font-bold py-2 bg-white/90 rounded-lg text-[10px] border border-blue-100 shadow-sm">דיווח על תקלה / בקשת הקפאה</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- סעיף 3: מודל ההשקעה -->
+            <section>
+                <h2 class="text-2xl font-semibold text-blue-800 mb-6 border-r-4 border-blue-800 pr-3">3. מודל ההשקעה, בעלות ותחזוקה</h2>
+                
+                <div class="space-y-6">
+                    <div class="gradient-brand p-8 rounded-2xl text-white shadow-xl relative overflow-hidden text-right">
+                        <div class="flex flex-col sm:flex-row justify-between items-center relative z-10">
+                            <div>
+                                <h3 class="text-2xl font-bold italic">הקמת צ'טבוט וואטסאפ (Setup)</h3>
+                                <p class="text-blue-100 text-sm mt-2 max-w-md italic">כולל אפיון מסלולים, בניית עץ תגובות חכם במניצ'ט, חיבור מקורות קמפיין והשקה מלאה.</p>
+                            </div>
+                            <div class="mt-4 sm:mt-0 text-center">
+                                <span class="text-4xl font-black">5,000₪</span>
+                                <p class="text-[10px] opacity-80 uppercase tracking-widest mt-1">One-Time Fee</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-right">
+                        <!-- Fees -->
+                        <div class="bg-gray-50 border border-gray-200 p-6 rounded-xl text-right">
+                            <h4 class="font-bold text-gray-800 mb-4 border-b pb-2 italic">עלויות תשתית ורישיון</h4>
+                            <div class="space-y-3">
+                                <div class="flex justify-between items-center text-sm">
+                                    <span class="text-gray-600 italic">רישיון ManyChat חודשי:</span>
+                                    <span class="font-bold text-blue-800">כ-$15</span>
+                                </div>
+                                <div class="flex justify-between items-center text-sm">
+                                    <span class="text-gray-600 italic">וריפיקציה ושימוש מול Meta:</span>
+                                    <span class="font-bold text-blue-800 text-[10px]">לפי מחירון מטא</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Bank of hours & Ownership -->
+                        <div class="bg-blue-50 border border-blue-200 p-6 rounded-xl">
+                            <h4 class="font-bold text-blue-900 mb-4 border-b border-blue-200 pb-2 italic">שליטה מלאה ושדרוגים</h4>
+                            <p class="text-[10px] text-blue-800 mb-4 italic leading-tight">
+                                <span class="font-bold">בעלות מלאה:</span> לאחר סיום ההקמה, ליאן יקבל שליטה ובעלות מלאה על המערכת והתכנים. 
+                                <br><span class="font-bold">שדרוגים עתידיים:</span> במידה ויידרשו שינויים בתסריט, הוספת מסלולים או תמיכה טכנית נוספת:
+                            </p>
+                            <div class="bg-white p-3 rounded-lg border border-blue-100 flex justify-between items-center">
+                                <span class="text-sm font-bold text-blue-800 italic">בנק שעות לתמיכה:</span>
+                                <span class="text-lg font-black text-gray-900">250₪ <span class="text-xs font-normal">לשעה</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- סעיף 4: מפת דרכים -->
+            <section class="bg-gray-900 text-white p-8 rounded-2xl shadow-inner">
+                <h2 class="text-2xl font-bold mb-8 text-center italic underline underline-offset-8 decoration-blue-500">מפת דרכים להקמה</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 text-right">
+                    <div class="text-center">
+                        <div class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-lg italic">1</div>
+                        <h4 class="font-bold mb-2">אפיון BESTFIT</h4>
+                        <p class="text-[10px] text-gray-400 italic">מיפוי מסלולי האימון והשאלות הנפוצות של יאן.</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-lg italic">2</div>
+                        <h4 class="font-bold mb-2">תשתית ומספר</h4>
+                        <p class="text-[10px] text-gray-400 italic">חיבור המספר המשרדי (04), בתנאי שיאושר על ידי מאניצ'ט ברמה הטכנית.</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-lg italic">3</div>
+                        <h4 class="font-bold mb-2">בנייה והשקה</h4>
+                        <p class="text-[10px] text-gray-400 italic">חיבור למטא, וריפיקציה רשמית והפעלת הבוט.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- סעיף 5: תנאים כלליים והתקשרות -->
+            <section class="bg-gray-50 p-6 rounded-2xl border border-gray-200 text-right">
+                <h2 class="text-xl font-bold text-gray-800 mb-4 border-b pb-2">תנאים כלליים והתקשרות</h2>
+                <div class="text-[11px] text-gray-600 space-y-3 leading-relaxed">
+                    <p>
+                        <span class="font-bold text-gray-800">1. עלויות צד ג':</span> הצעת המחיר אינה כוללת עלויות רישיון חודשיות של ManyChat או עלויות הודעות המשולמות ישירות ל-Meta (פייסבוק). אלירן אור אינו אחראי לשינויי תעריפים של חברות אלו או לתקינות מערכת הסליקה שלהן.
+                    </p>
+                    <p>
+                        <span class="font-bold text-gray-800">2. אחריות על תוכן וחוקיות:</span> הלקוח (BESTFIT) נושא באחריות מלאה על התוכן הנשלח באמצעות הבוט, לרבות עמידה בחוק התקשורת (חוק הספאם), חוק הגנת הפרטיות ותקנות GDPR במידת הצורך. על הלקוח לוודא קבלת אישור דיוור כדין מכל משתמש במערכת.
+                    </p>
+                    <p>
+                        <span class="font-bold text-gray-800">3. זמינות המערכת:</span> הפעילות מבוססת על תשתית של Meta ו-ManyChat. אלירן אור לא יישא באחריות לנזק ישיר או עקיף (לרבות אובדן הכנסות) הנובע מהשבתה של פלטפורמות אלו, תקלות בשרתי וואטסאפ או חסימת מספרים על ידי Meta בשל הפרת מדיניות השימוש שלהן.
+                    </p>
+                    <p>
+                        <span class="font-bold text-gray-800">4. אישור מספר ווריפיקציה:</span> תהליך העבודה יתחיל בבדיקת היתכנות טכנית להעברת המספר המשרדי הקיים (04). חיבור המספר או אישור ה-Business Manager כפופים להנחיות ואישור Meta ו-ManyChat. במידה ותתגלה מניעה טכנית להעברת המספר, נפעל יחד למציאת החלופה הטובה ביותר עבור הסטודיו (כגון פתיחת מספר ייעודי).
+                    </p>
+                    <p>
+                        <span class="font-bold text-gray-800">5. קניין רוחני ובעלות:</span> עם סיום התשלום המלא וההשקה, ליאן (BESTFIT) יקבל בעלות ושליטה מלאה על חשבון המניצ'ט ותסריטי השיחה שנבנו. כל שדרוג, שינוי או תמיכה נוספת שיתבקשו לאחר שלב ההשקה יתומחרו בנפרד לפי בנק שעות של 250 ש"ח + מע"מ לשעה.
+                    </p>
+                    <p>
+                        <span class="font-bold text-gray-800">6. תנאי תשלום:</span> 50% מהסכום עם תחילת העבודה (שלב האפיון) ו-50% עם סיום הבנייה ולפני ההשקה בפועל.
+                    </p>
+                </div>
+            </section>
+
+            <!-- סעיף 6: אישור ההצעה ותחילת עבודה -->
+            <section class="bg-blue-50 p-8 rounded-2xl border-2 border-blue-100 shadow-sm text-right">
+                <h2 class="text-2xl font-bold text-blue-900 mb-4 italic text-right">אישור ההצעה ותחילת עבודה</h2>
+                <p class="text-gray-700 mb-6 text-sm text-right">
+                    ליאן היקר, כדי לצאת לדרך ולהתחיל בשלב האפיון של הבוט עבור BESTFIT, אנא מלא את פרטיך כאן ושלח אישור. 
+                    <br>עם קבלת האישור, אשלח אליך דרישת תשלום למקדמה (50%) ונתחיל לעבוד!
+                </p>
+
+                <form action="https://formspree.io/f/mlgdrroa" method="POST" class="space-y-4 max-w-lg">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-right">
+                        <div class="text-right">
+                            <label class="block text-xs font-bold text-gray-600 mb-1 text-right">שם מלא / חברה:</label>
+                            <input type="text" name="name" required placeholder="יאן אולגנבלום / BESTFIT" 
+                                   class="w-full px-4 py-2 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-600 transition text-sm text-right">
+                        </div>
+                        <div class="text-right">
+                            <label class="block text-xs font-bold text-gray-600 mb-1 text-right">כתובת אימייל:</label>
+                            <input type="email" name="email" required placeholder="email@example.com" 
+                                   class="w-full px-4 py-2 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-600 transition text-sm text-right">
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start gap-3 mt-4 text-right">
+                        <input type="checkbox" name="terms_agreed" required id="terms" class="mt-1 w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500">
+                        <label for="terms" class="text-xs text-gray-600 leading-tight text-right">
+                            אני מאשר את תנאי הצעת המחיר להקמת צ'טבוט וואטסאפ ל-BESTFIT, לרבות התנאים הכלליים ומודל ההשקעה שפורטו לעיל.
+                        </label>
+                    </div>
+
+                    <div class="text-right">
+                        <button type="submit" class="w-full sm:w-auto px-8 py-3 bg-blue-800 hover:bg-blue-900 text-white font-bold rounded-full shadow-lg transition-transform hover:scale-105 active:scale-95">
+                            שלח אישור והתחלנו! 🚀
+                        </button>
+                    </div>
+                    
+                    <!-- שדות נסתרים ל-Formspree -->
+                    <input type="hidden" name="_subject" value="אישור הצעת מחיר צ'טבוט - BESTFIT">
+                    <input type="hidden" name="proposal_date" value="30/12/2025">
+                </form>
+            </section>
+
+            <!-- סעיף 7: חתימה -->
+            <section class="pt-10 border-t border-gray-200">
+                <div class="flex flex-col sm:flex-row items-center justify-between">
+                    <div class="flex items-center mb-6 sm:mb-0">
+                        <img src="https://i0.wp.com/eliranor.com/wp-content/uploads/2020/02/eliran-OR-%D7%9C%D7%95%D7%92%D7%95-%D7%A9%D7%A0%D7%99-%D7%A9%D7%A7%D7%95%D7%A3.png?fit=500%2C500&ssl=1" alt="לוגו אלירן אור" class="w-24 h-24 rounded-full border-2 border-blue-50 shadow-sm ml-6">
+                        <div class="text-right mr-4 sm:mr-0">
+                            <p class="text-gray-500 text-xs italic text-right">בברכה ובהצלחה,</p>
+                            <p class="font-bold text-2xl text-blue-900 leading-tight text-right text-right">אלירן אור</p>
+                            <p class="text-blue-700 font-medium text-sm italic text-right">יועץ ומתכנן תהליכי שיווק ואוטומציה</p>
+                            <div class="mt-2 flex gap-3 text-xs font-bold justify-end sm:justify-start">
+                                <a href="https://eliranor.com" target="_blank" class="text-blue-600 hover:text-blue-800 underline underline-offset-4 decoration-blue-400">eliranor.com</a>
+                                <span class="text-gray-300">|</span>
+                                <a href="https://wiseguys.co.il" target="_blank" class="text-blue-600 hover:text-blue-800 underline underline-offset-4 decoration-blue-400">wiseguys.co.il</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        
+        <footer class="mt-12 pt-6 border-t border-gray-100 text-center text-gray-400 text-[10px] italic">
+            © 2025 אלירן אור - ליווי עסקי וצמיחה דיגיטלית. כל המחירים בתוספת מע"מ כחוק.
+        </footer>
+    </div>
+
+</body>
+</html>
